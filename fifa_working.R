@@ -1,3 +1,11 @@
+#author: John McGrath
+#date: 
+#project: FIFA Statistics:Simple linear regression 
+#description: Use a simple linear regression to predict a striker's salary based on his finishing ability stat rating
+#Ouput linear regression
+
+
+
 #Import, explore data, build a model
 install.packages("usemodels")
 library(tidyverse)
