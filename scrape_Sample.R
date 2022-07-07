@@ -9,7 +9,6 @@ library(rvest)
 library(lubridate)
 library(janitor)
 
-
 url <- 'https://www.roguefitness.com/weightlifting-bars-plates/barbells'
 rogue_link <- read_html(url)
 #use selector gadget to get the element desired, pipe to html text to extract that text
@@ -38,7 +37,7 @@ df_rogue <- as.data.frame(test) %>%
   select(new_date,rogue_name,rogue_price)
 
 #Record the output
-write.table(df_rogue, paste("Rogue_Barbell_",toString(Sys.Date()),".csv"),row.names=F, sep=",")
+write.table(df_rogue, paste("data/","Rogue_Barbell_",toString(Sys.Date()),".csv"),row.names=F, sep=",")
 
 
 
