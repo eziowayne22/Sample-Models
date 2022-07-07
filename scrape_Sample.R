@@ -16,10 +16,10 @@ install.packages("taskscheduleR")
 rogue <-  "https://www.roguefitness.com/weightlifting-bars-plates/barbells"
 #given a link, read_html gives you the html source code for the page
 rogue_link <-  read_html(rogue)
-
+View(rogue_link)
 #use selector gadget to get the element desired, pipe to html text to extract that text
 rogue_name <-  rogue_link %>% html_nodes(".title") %>% html_text()
-
+View(rogue_name)
 rogue_name_2 <- as.data.frame(rogue_name) %>% 
   filter(rogue_name!="")
 
@@ -32,21 +32,22 @@ rogue_price <- rogue_link %>% html_nodes(".price") %>% html_text()
                   filter(rogue_price!="")
 
 #Provide the current date when it runs
-Date_stamp <- as.data.frame(Sys.Date()) %>% 
-  rename(date_of_extract="Sys.Date()")
-
-test <- bind_cols(rogue_name_3,rogue_price_2,Date_stamp)
+date_of_extract <- as.data.frame(as.Date(Sys.Date()))
+View(date_of_extract)
+test <- bind_cols(rogue_name_3,rogue_price_2,date_of_extract) %>% 
+  rename(new_date="as.Date(Sys.Date())")
 
 #Remove the dollar sign so we can order by price descending
 df_rogue <- as.data.frame(test) %>% 
   mutate(numeric_price=as.double(gsub("\\$", "",rogue_price))) %>% 
+  #mutate(new_date=as.character(date_of_extract)) %>% 
   arrange(desc(numeric_price)) %>% 
-  select(date_of_extract,rogue_name,rogue_price)
+  select(new_date,rogue_name,rogue_price)
 
 View(df_rogue)
 
 #Record the output
-write.table(df_rogue, file="Rogue_Barbell_40_2022_06_28.csv",row.names=F, sep=",")
+write.table(df_rogue, paste("Rogue_Barbell_",toString(Sys.Date()),".csv"),row.names=F, sep=",")
 
 
 
