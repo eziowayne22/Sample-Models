@@ -38,4 +38,4 @@ jobs:
         git push origin All-Models,-Visuals-and-Work
       env:
         REPO_KEY: ${{secrets.GITHUB_TOKEN}}
-        username: github-actions
+        username: actions-user
