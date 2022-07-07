@@ -20,8 +20,10 @@ jobs:
     - name: Install packages
       run: |
         R -e 'install.packages("tidyverse")'
-        R -e 'install.packages("janitor")'
+        R -e 'install.packages("lubridate")'
         R -e 'install.packages("rvest")'
+        R -e 'install.packages("sqldf")'
+
     # Run R script
     - name: Scrape
       run: Rscript scrape_Sample.R
