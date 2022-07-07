@@ -31,11 +31,11 @@ jobs:
     # Add new files in data folder, commit along with other modified files, push
     - name: Commit files
       run: |
-        git config --local user.name actions-user
+        git config --local user.name github-actions
         git config --local user.email "actions@github.com"
         git add data/*
         git commit -am "GH ACTION Headlines $(date)"
         git push origin All-Models,-Visuals-and-Work
       env:
         REPO_KEY: ${{secrets.GITHUB_TOKEN}}
-        username: actions-user
+        username: github-actions
