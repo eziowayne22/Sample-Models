@@ -4,7 +4,7 @@ name: rogue40scrape
 # Controls when the action will run.
 on:
   push:
-    branches: main
+    branches: All-Models,-Visuals-and-Work
 
 jobs:
   autoscrape:
@@ -33,7 +33,7 @@ jobs:
         git config --local user.email "actions@github.com"
         git add data/*
         git commit -am "GH ACTION Autorun $(date)"
-        git push origin main
+        git push origin All-Models,-Visuals-and-Work
       env:
         REPO_KEY: ${{secrets.GITHUB_TOKEN}}
         username: github-actions
