@@ -7,11 +7,9 @@
 library(tidyverse)
 library(rvest)
 library(lubridate)
-library(xml2)
-
+library(janitor)
 ---------------------------------------------------------------------------------------
 #given a link, read_html gives you the html source code for the page
-test_45 <- 0
 rogue_link <- read_html("https://www.roguefitness.com/weightlifting-bars-plates/barbells")
 #use selector gadget to get the element desired, pipe to html text to extract that text
 rogue_name <-  rogue_link %>% html_nodes(".title") %>% html_text()
