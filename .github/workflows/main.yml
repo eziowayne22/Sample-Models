@@ -22,8 +22,7 @@ jobs:
         R -e 'install.packages("tidyverse")'
         R -e 'install.packages("lubridate")'
         R -e 'install.packages("rvest")'
-        R -e 'install.packages("sqldf")'
-        R -e 'install.packages("xm12")'
+        R -e 'install.packages("janitor")'
 
     # Run R script
     - name: Scrape
