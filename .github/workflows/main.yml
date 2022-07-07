@@ -1,0 +1,39 @@
+# Hourly scraping
+name: rogue40scrape
+
+# Controls when the action will run.
+on:
+  push:
+    branches: main
+
+jobs:
+  autoscrape:
+    # The type of runner that the job will run on
+    runs-on: windowsos-latest
+
+    # Load repo and install R
+    steps:
+    - uses: actions/checkout@master
+    - uses: r-lib/actions/setup-r@master
+
+    # Set-up R
+    - name: Install packages
+      run: |
+        R -e 'install.packages("tidyverse")'
+        R -e 'install.packages("janitor")'
+        R -e 'install.packages("rvest")'
+    # Run R script
+    - name: Scrape
+      run: Rscript scrape_Sample.R
+
+    # Add new files in data folder, commit along with other modified files, push
+    - name: Commit files
+      run: |
+        git config --local user.name github-actions
+        git config --local user.email "actions@github.com"
+        git add data/*
+        git commit -am "GH ACTION Autorun $(date)"
+        git push origin main
+      env:
+        REPO_KEY: ${{secrets.GITHUB_TOKEN}}
+        username: github-actions
