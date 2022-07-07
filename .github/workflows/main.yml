@@ -23,6 +23,7 @@ jobs:
         R -e 'install.packages("lubridate")'
         R -e 'install.packages("rvest")'
         R -e 'install.packages("sqldf")'
+        R -e 'install.packages("xm12")'
 
     # Run R script
     - name: Scrape
