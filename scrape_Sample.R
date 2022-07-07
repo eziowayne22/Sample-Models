@@ -9,7 +9,7 @@ library(rvest)
 library(lubridate)
 library(janitor)
 
-url <- 'https://www.roguefitness.com/weightlifting-bars-plates/barbells'
+url <- 'https://www.roguefitness.com/weightlifting-bars-plates/barbells?sort=price.desc&n_item=80'
 rogue_link <- read_html(url)
 
 #use selector gadget to get the element desired, pipe to html text to extract that text
@@ -18,7 +18,7 @@ rogue_name_2 <- as.data.frame(rogue_name) %>%
   filter(rogue_name!="")
 
 #top 40 items
-rogue_name_3 <- tail(rogue_name_2,40)
+rogue_name_3 <- tail(rogue_name_2,80)
 
 rogue_price <- rogue_link %>% html_nodes(".price") %>% html_text()
 
