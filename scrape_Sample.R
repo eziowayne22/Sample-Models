@@ -10,10 +10,10 @@ library(lubridate)
 library(janitor)
 ---------------------------------------------------------------------------------------
 #given a link, read_html gives you the html source code for the page
-rogue_link <- read_html("https://www.roguefitness.com/weightlifting-bars-plates/barbells")
+url <- 'https://www.roguefitness.com/weightlifting-bars-plates/barbells'
+rogue_link <- read_html(url)
 #use selector gadget to get the element desired, pipe to html text to extract that text
 rogue_name <-  rogue_link %>% html_nodes(".title") %>% html_text()
-View(rogue_name)
 rogue_name_2 <- as.data.frame(rogue_name) %>% 
   filter(rogue_name!="")
 
