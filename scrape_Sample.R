@@ -13,9 +13,8 @@ library(sqldf)
 install.packages("taskscheduleR")
 
 ---------------------------------------------------------------------------------------
-rogue <-  "https://www.roguefitness.com/weightlifting-bars-plates/barbells"
 #given a link, read_html gives you the html source code for the page
-rogue_link <-  read_html(rogue)
+rogue_link <-  read_html("https://www.roguefitness.com/weightlifting-bars-plates/barbells")
 View(rogue_link)
 #use selector gadget to get the element desired, pipe to html text to extract that text
 rogue_name <-  rogue_link %>% html_nodes(".title") %>% html_text()
