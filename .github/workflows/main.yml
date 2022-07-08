@@ -3,8 +3,8 @@ name: rogue40scrape
 
 # Controls when the action will run.
 on:
-  push:
-    branches: All-Models,-Visuals-and-Work
+  schedule:
+    - cron: '0 8 * * *'
 
 jobs:
   autoscrape:
