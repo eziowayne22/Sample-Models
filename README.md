@@ -29,7 +29,7 @@ Sample Modelling performed on various datasets deploying different techniques
 - Train the simple linear regresion model
 - Test the model; use the TIDY yardstick functions to gage the model's effectiveness
 
-![](https://github.com/eziowayne22/Sample-Models/blob/All-Models%2C-Visuals-and-Work/images/auguero.jpg)
-![]https://github.com/eziowayne22/Sample-Models/blob/All-Models%2C-Visuals-and-Work/images/fifa_metrics.png)
+![]([https://github.com/eziowayne22/Sample-Models/blob/All-Models%2C-Visuals-and-Work/images/auguero.jpg](https://github.com/eziowayne22/Sample-Models/blob/All-Models%2C-Visuals-and-Work/images/ronaldo9.jpg)
+![](https://github.com/eziowayne22/Sample-Models/blob/All-Models%2C-Visuals-and-Work/images/fifa_metrics.png)
 ![](https://github.com/eziowayne22/Sample-Models/blob/All-Models%2C-Visuals-and-Work/images/salary_pred.png)
 
