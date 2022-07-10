@@ -33,3 +33,11 @@ Sample Modelling performed on various datasets deploying different techniques
 ![](https://github.com/eziowayne22/Sample-Models/blob/All-Models%2C-Visuals-and-Work/images/fifa_metrics.png)
 ![](https://github.com/eziowayne22/Sample-Models/blob/All-Models%2C-Visuals-and-Work/images/salary_pred.png)
 
+5. Use Multi-Linear Regression to project out Rookie RB fantasy points for the upcoming season
+- Did extensvie data wrangling using PFF,ESPN and Stathead to get relevant data
+- Predict using a player's projected draft round and their Weight-adjusted 40 yard dash
+- Test against historical runningbacks to see how well points can be predicted
+- Predict based on current rookies; this was done prior to the nfl draft
+- Last step is to visualize in tableau to show how many PPR points the model predicted for each back
+
+![](https://github.com/eziowayne22/Sample-Models/blob/All-Models%2C-Visuals-and-Work/images/ppr_predictions.png)
