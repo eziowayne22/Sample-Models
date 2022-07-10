@@ -15,3 +15,12 @@ Sample Modelling performed on various datasets deploying different techniques
 - Created the final wordcloud
 
 ![](https://github.com/eziowayne22/Sample-Models/blob/All-Models%2C-Visuals-and-Work/images/summa_1.png)
+
+3. Create a classification model using logistic regression to predict whether or not a given pokemon is legendary
+- train a logstic regression model using capture rate and base stats as the predictors
+- ran model off of the test dataset with over 98% accuracy; base stats combined with capture rate are very predictive
+
+![](https://github.com/eziowayne22/Sample-Models/blob/All-Models%2C-Visuals-and-Work/images/mewtwo.jpg)
+![](https://github.com/eziowayne22/Sample-Models/blob/All-Models%2C-Visuals-and-Work/images/pokemon_accuracy.png)
+
+
