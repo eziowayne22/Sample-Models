@@ -1,4 +1,4 @@
-# Sample-Models
+# Data Portfolio
 Data Portfolio Projects: performed on various datasets deploying different techniques
 
 1. Use Multi-Linear Regression to project out Rookie RB fantasy points for the upcoming season
@@ -41,4 +41,11 @@ Data Portfolio Projects: performed on various datasets deploying different techn
 - Predicted the price of gold 3 years into the future
 
 ![](https://github.com/eziowayne22/Sample-Models/blob/All-Models%2C-Visuals-and-Work/images/gold_ts.png)
+
+6. Twitter Sentiment Analysis
+- Imported 750k random tweets
+- Conducted a sentiment analysis using tidytext to compare prevalence of positive vs. negative words
+
+![](https://github.com/eziowayne22/Sample-Models/blob/All-Models%2C-Visuals-and-Work/images/sentiment.png)
+
 
