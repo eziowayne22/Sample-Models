@@ -22,5 +22,6 @@ Sample Modelling performed on various datasets deploying different techniques
 
 ![](https://github.com/eziowayne22/Sample-Models/blob/All-Models%2C-Visuals-and-Work/images/mewtwo.jpg)
 ![](https://github.com/eziowayne22/Sample-Models/blob/All-Models%2C-Visuals-and-Work/images/pokemon_accuracy.png)
+![](https://github.com/eziowayne22/Sample-Models/blob/All-Models%2C-Visuals-and-Work/images/Screenshot%202022-07-10%20151141.png)
 
 
