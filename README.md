@@ -24,4 +24,12 @@ Sample Modelling performed on various datasets deploying different techniques
 ![](https://github.com/eziowayne22/Sample-Models/blob/All-Models%2C-Visuals-and-Work/images/pokemon_accuracy.png)
 ![](https://github.com/eziowayne22/Sample-Models/blob/All-Models%2C-Visuals-and-Work/images/Screenshot%202022-07-10%20151141.png)
 
+4. Use Simple Linear Regression to predict a professional soccer striker's salary based on his Finishing stat in the FIFA video game
+- Normalize salaries using log10
+- Train the simple linear regresion model
+- Test the model; use the TIDY yardstick functions to gage the model's effectiveness
+
+![](https://github.com/eziowayne22/Sample-Models/blob/All-Models%2C-Visuals-and-Work/images/auguero.jpg)
+![]https://github.com/eziowayne22/Sample-Models/blob/All-Models%2C-Visuals-and-Work/images/fifa_metrics.png)
+![](https://github.com/eziowayne22/Sample-Models/blob/All-Models%2C-Visuals-and-Work/images/salary_pred.png)
 
