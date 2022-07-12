@@ -2,7 +2,7 @@
 Data Portfolio Projects: performed on various datasets deploying different techniques
 
 1. Use Multi-Linear Regression to project out Rookie RB fantasy points for the upcoming season
-- Did extensvie data wrangling using PFF,ESPN and Stathead to get relevant data
+- Did extensive data wrangling using PFF,ESPN and Stathead to get relevant data
 - Predict using a player's projected draft round and their Weight-adjusted 40 yard dash
 - Test against historical runningbacks to see how well points can be predicted
 - Predict based on current rookies; this was done prior to the nfl draft
