@@ -34,8 +34,10 @@ test <- bind_cols(rogue_name_3,rogue_price_2,date_of_extract) %>%
 df_rogue <- as.data.frame(test) %>% 
   mutate(numeric_price=as.double(gsub("\\$", "",rogue_price))) %>% 
   #mutate(new_date=as.character(date_of_extract)) %>% 
+  #kick out slashes; case when rogue name contains '\'  remove it
+  mutate(rogue_name_2=gsub('\\/', "@",rogue_name)) %>% 
   arrange(desc(numeric_price)) %>% 
-  select(new_date,rogue_name,rogue_price)
+  select(new_date,rogue_name_2,rogue_price)
 
 #Record the output
 write.table(df_rogue, paste("data/","Rogue_Barbell_",toString(Sys.Date()),".csv"),row.names=F, sep=",")
